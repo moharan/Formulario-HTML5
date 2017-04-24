@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Inicio</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Formulario HTML5 - Nombre y Apellido - Número de Teléfono - Dropdown - Email - Contraseña -->
+<!-- input puede ser // enabled o disabled -->
+<!-- campo obligatorio //required -->
+<!-- method="get" // method="POST" -->
+<!-- despliega calendario // input type="date"-->
+
+<div class= "contenedor">
+<h2>Formulario</h2>
+<p>Ingrese los datos requeridos a continuación:</p>
+<form action="">
+	Nombre y Apellido:<b class="campo_obligatorio">*</b><br>
+	<input type="text" name="nombreapellido" required><br>
+	Número de Teléfono:<b class="campo_obligatorio">*</b><br>
+	<input type="tel" name="telefono" pattern="[0-9]{9}" title="9 digitos" required><br>
+	Actividad:<b class="campo_obligatorio">*</b><br>
+	<select required name="actividad">
+		<option value="">Ninguno</option>
+		<option value="estudiante">Estudiante</option>
+		<option value="profesional">Profesional</option>
+		<option value="otros">Otros</option>
+	</select><br>
+	Email:<b class="campo_obligatorio">*</b><br>
+	<input type="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required><br>
+	Contraseña:<b class="campo_obligatorio">*</b><br>
+	<input type="password" name="contrasena" pattern=".{6,}" title="6 o más caracteres" required><br><br>
+	<input type="submit" value="Enviar">
+</form>
+</div>
+    </script>
+<!-- JAVASCRIPT es preferible como ultima linea en el body -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

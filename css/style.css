@@ -1,0 +1,25 @@
+body {
+	background-image: url(../img/html5-semantica-ejemplo.jpg);
+	background-position: center;
+	background-repeat:repeat-y;
+	color: #000;
+}
+h2 {
+	color: #666;
+}
+.contenedor{
+	background: #DCDCDC;
+	opacity: 0.9;
+	width: 50%;
+	height: 100%;
+	text-align: left;
+	padding: 20px;
+	margin: auto;
+	border-radius:20px; 
+	-moz-border-radius:10px; /* Firefox */ 
+	-webkit-border-radius:10px; /* Safari y Chrome */ 
+}
+.campo_obligatorio{
+	color: red;
+	font-size: 9px;
+}
